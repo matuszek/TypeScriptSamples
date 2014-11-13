@@ -266,12 +266,12 @@ function defaultScene(): Scene {
 
 function exec() {
     var canv = document.createElement("canvas");
-    canv.width = 256;
-    canv.height = 256;
+    canv.width = 800;
+    canv.height = 800;
     document.body.appendChild(canv);
     var ctx = canv.getContext("2d");
     var rayTracer = new RayTracer();
-    return rayTracer.render(defaultScene(), ctx, 256, 256);
+    return rayTracer.render(defaultScene(), ctx, 800, 800);
 }
 
 exec();
